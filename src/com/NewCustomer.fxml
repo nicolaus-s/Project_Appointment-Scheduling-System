@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="583.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.shaffer.NewCustomerController">
+   <children>
+      <Label layoutX="151.0" layoutY="125.0" text="Full Name" />
+      <TextField fx:id="txtFullName" layoutX="156.0" layoutY="142.0" />
+      <TextField fx:id="txtAddress" layoutX="156.0" layoutY="198.0" />
+      <TextField fx:id="txtPostalCode" layoutX="156.0" layoutY="259.0" />
+      <TextField fx:id="txtPhoneNumber" layoutX="156.0" layoutY="325.0" />
+      <Label layoutX="156.0" layoutY="181.0" text="Address" />
+      <Label layoutX="156.0" layoutY="242.0" text="Postal Code" />
+      <Label layoutX="156.0" layoutY="308.0" text="Phone Number" />
+      <Button layoutX="464.0" layoutY="396.0" mnemonicParsing="false" onAction="#onClickAdd" text="Submit" />
+      <Button layoutX="394.0" layoutY="396.0" mnemonicParsing="false" onAction="#onClickCancel" text="Cancel" />
+      <Label layoutX="98.0" layoutY="65.0" text="Add Customer Record" />
+      <ComboBox fx:id="comboDivision" layoutX="389.0" layoutY="255.0" prefWidth="150.0" promptText="Select..." visibleRowCount="5" />
+      <ComboBox fx:id="comboCountry" layoutX="389.0" layoutY="186.0" onAction="#selectCountry" prefWidth="150.0" promptText="Select..." />
+      <Label layoutX="391.0" layoutY="238.0" text="State/Province" />
+      <Label layoutX="389.0" layoutY="169.0" text="Country" />
+   </children>
+</AnchorPane>
